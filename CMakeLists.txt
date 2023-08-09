@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.16)
 project(teb)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake_modules)
 
 find_package(Boost REQUIRED COMPONENTS system thread graph)
@@ -12,7 +12,7 @@ find_package(OpenCV REQUIRED)
 include_directories(
         /usr/include/eigen3
         ${SUITESPARSE_INCLUDE_DIRS}
-        ${G2O_INCLUDE_DIR}
+        /opt/ros/noetic/include/
         ${OpenCV_INCLUDE_DIRS}
 )
 
