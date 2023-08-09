@@ -13,8 +13,19 @@ https://github.com/rst-tu-dortmund/teb_local_planner
 * Boost 
 * OpenCV (可选，用于显示地图和路径)
 
+按照以下指令编译：
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
 ## 代码运行
+运行以下指令
 
+```bash
+./teb
+```
 代码运行成功时，会出现一个窗口和两个滑动条，通过滑动条可以控制起始点和目标点的角度，从而控制轨迹的形状。
 ![example](example.png)
 
